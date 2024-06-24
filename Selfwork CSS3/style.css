@@ -1,0 +1,116 @@
+*{
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.title{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{
+    color: red;
+    background-image: url(https://picsum.photos/70/50);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+h2,h3{
+    color: green;   
+}
+
+.logo{
+    height: 50px;
+}
+
+.leggi-tutto{
+    color: rgb(212, 1, 177);
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+.leggi-tutto:hover{
+    background-color: rgba(0, 204, 255, 0.5);
+}
+
+.nav-link{
+    display: flex;
+    align-items: top;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+.main-flex{
+    display: flex;   
+}
+
+.articles{
+    width: 60%;
+    align-items: left;
+}
+
+aside{
+    width: 40%;
+    align-items: right;
+    padding-left: 5%;
+    padding-right: 20%;
+    padding-top: 10%;
+}
+
+nav a:hover{
+    border-bottom: 2px solid red;
+    
+}
+
+nav ul{
+    list-style-type: none;
+}
+nav a{
+    text-decoration: none;
+}
+
+main img{
+    width: 70%;
+    padding-left: 5%;
+    padding-top: 15%;
+    
+}
+
+#first{
+    padding-top: 0%;
+}
+
+.upcontainer{
+    position: relative;
+}
+
+.upcontainer img{
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+    z-index: 999;
+    background-color: rgb(255, 255, 255);
+}
+
+.upcontainer img:hover{
+    cursor: pointer;
+    animation: pulse 0.5s alternate infinite;
+}
+
+@keyframes pulse {
+    from { transform: scale(1); } 
+    to { transform: scale(1.1); }
+  }
+
+@media screen and (max-width: 600px){
+    .upcontainer img{
+        height: 40px;
+        width: 40px;  
+        bottom: 5vh;
+        right: 5vw;
+    }
+}
